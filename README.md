@@ -1,34 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Move-It dev
 
-## Getting Started
+Uma forma simples de se manter saudável enquanto aumenta sua produtividade. Use a técnica Pomodoro, fazendo pequenos intervalos durante o seus estudos/trabalho para se exercitar e se manter saudável. Conclua desafios para ganhar *xp* e avançar de nível. Veja seu ranking com relação aos seus amigos que também usam o aplicativo.
 
-First, run the development server:
+![alt-text](/img/app-inicio.png)
 
-```bash
-npm run dev
-# or
+## Sobre
+
+O Move.It é um projeto que foi desenvolvido durante a quarta edição do evento *Next Level Week* ministrado pela Rocketseat. A aplicação foi criada usando React.js (UI) e Next.js para SSR (Server Side Rendering). Neste projeto são explorados conceitos chave da biblioteca React.js como componentes, propriedades, estados e context API (troca de informação entre os componentes). O projeto conta com Typescript para adicionar tipagem à nossas interfaces.
+
+### Como funciona ?
+
+No final de cada ciclo, o usuário recebe um novo desafio aleatório. Esses desafios cobrem exerícios físicos e para os olhos (nós devs passamos incontáveis horas na frente das telas então precisamos cuidar da nossa visão!). Se o desafio for concluído com sucesso, o usuário recebe uma quantia de *xp*. Quanto mais desafios completados, mais *xp* e maior o seu nível!
+
+![alt-text](/img/app-presentation.gif)
+
+### Não conseguiu chegar ao fim de um ciclo? 
+
+Tudo bem! Nos sabemos que as vezes somos interrompidos no nosso fluxo de trabalho! Neste caso você pode simplesmente reiniciar o ciclo abandonando e começando de novo!
+
+### Não Conseguiu completar o desafio? 
+
+Tudo bem também! Você pode simplesmente dizer que falhou e não será punido mas não receberá nenhuma experiência. :wink:
+
+### Quanto mais experiência, mais chances de subir de nível!
+
+ O Aplicativo incorpora a gamificação, então quando mais desafios você completa, mais *xp* você ganha e maiores as chances de subir de nivel.
+
+![alt-text](/img/level-up.gif)
+
+# Rodando o App localmente
+
+Caso vc queira rodar o código localmente, basta clonar este repositório
+
+```
+git clone <url>
+```
+
+Com o repositório em sua máquina local é preciso instalar as dependências do App usando o **yarn**:
+
+
+- yarn 
+```
+yarn install
+```
+
+Para começar a rodar o App localmente:
+```
+yarn start
+```
+
+Ou no modo desenvolvedor:
+```
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Se tudo correr bem, o aplicativo iniciará na porta 3000:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Caso a janela do navegador não abra automaticamente, basta colar a URL acima no browser.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+## Melhorias futuras:
 
-To learn more about Next.js, take a look at the following resources:
+:beginner: Tela inicial para login com o GitHub ou Email;
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+:beginner: Sistema de ranqueamento;
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+:beginner: Modo escuro;
